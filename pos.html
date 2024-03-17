@@ -1,0 +1,37 @@
+<html>
+    <head>
+      <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Welcome to the Canteen!</h1>
+        <h2>Prices are shown below. Click finalize order once you're sure with your orders!</h2>
+        <ul>
+            <br>
+            <img src="menu.png" alt="Description of the image" width="900" height="139">
+        </ul>
+        <button name="addFood">Add a food Item</button>
+        <strong><p>Choice</p></strong>
+        <div id="food-items-container"></div>
+            <select name="food" id="food">
+                <option value="burger">Burger</option>
+                <option value="kikiam">Kikiam</option>
+                <option value="fishbol">Fishbol</option>
+                <option value="fries">Fries</option>
+            </select>
+            <br><br>
+            <strong><label for="quantity">Quantity</label></strong><br>
+            <input type="number" id="quantity" name="quantity">
+
+            <br>
+                <br>
+                <button type="submit" value="Finalize Order" onclick="orderFinalized()">Finalize Order</button> 
+                <br><br>
+                
+            <strong><br><p>Enter Cash Amount</p></strong>
+            <input type="number" id="cash" name="cash"></br>
+            <button type="submit" value="pay" onclick="pay()">Pay</button>
+                <script src="script.js"></script>
+    </body>
+</html>
+
+
